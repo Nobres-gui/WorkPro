@@ -2,24 +2,24 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/navigation_home"
-        android:icon="@drawable/ic_home"
+        android:icon="@drawable/btn_inicio"
         android:title="Início"
         />
     <item
         android:id="@+id/navigation_exercicios"
-        android:icon="@drawable/ic_home"
+        android:icon="@drawable/btn_lista"
         android:title="Exercícios"/>
     <item
         android:id="@+id/navigation_treino"
-        android:icon="@drawable/ic_home"
+        android:icon="@drawable/btn_treino"
         android:title="Treino"
         />
     <item
         android:id="@+id/navigation_timer"
-        android:icon="@drawable/ic_home"
+        android:icon="@drawable/btn_timer"
         android:title="Timer"/>
     <item
         android:id="@+id/navigation_perfil"
-        android:icon="@drawable/ic_home"
+        android:icon="@drawable/btn_perfil"
         android:title="Perfil"/>
 </menu>
