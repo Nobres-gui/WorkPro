@@ -2,15 +2,14 @@ package com.example.projeto;
 
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ProgressBar;
+import android.widget.ImageView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,7 +20,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        ImageView img_peito = findViewById(R.id.img_peito);
+        img_peito.setImageResource(R.drawable.icone_peito);
 
+        ImageView img_costas = findViewById(R.id.img_costas);
+        img_costas.setImageResource(R.drawable.icone_costas);
+
+        ImageView img_perna = findViewById(R.id.img_perna);
+        img_perna.setImageResource(R.drawable.icone_perna);
 
 
         /* Funcionamento do Bottom Menu*/

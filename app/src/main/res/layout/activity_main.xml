@@ -115,7 +115,6 @@
 
     </RelativeLayout>
 
-
     <!-- Kpi Streak -->
     <RelativeLayout
         android:layout_width="167dp"
@@ -138,7 +137,7 @@
             <TextView
                 android:id="@+id/textView1"
                 android:layout_width="53dp"
-                android:textSize="18sp"
+                android:textSize="17sp"
                 android:textStyle="bold"
                 android:layout_height="wrap_content"
                 android:text="Streak" />
@@ -178,6 +177,231 @@
 
     </RelativeLayout>
 
+    <!-- Divisão Seção-->
+    <View
+        android:layout_width="360dp"
+        android:layout_height="3dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="300dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="310dp"
+        android:layout_marginLeft="25dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Treinos Básicos"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        />
+
+    <!-- Seção Treino de Peito-->
+    <RelativeLayout
+        android:layout_width="175dp"
+        android:layout_height="107dp"
+        android:background="@drawable/border"
+        android:orientation="horizontal"
+        android:layout_marginTop="342dp"
+        android:layout_marginRight="185dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/img_peito"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/icone_peito"
+
+        />
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="60dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="Treino de Peito"
+                android:textSize="13sp"/>
+
+            <Button
+                android:id="@+id/btn_treino_peito"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="Abrir"
+                android:textSize="10sp"
+                android:padding="0dp"
+                android:backgroundTint="@color/cor_azul"
+                app:cornerRadius="3dp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <!-- Seção Treino de Costas-->
+    <RelativeLayout
+        android:layout_width="175dp"
+        android:layout_height="107dp"
+        android:background="@drawable/border"
+        android:orientation="horizontal"
+        android:layout_marginTop="342dp"
+        android:layout_marginLeft="185dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/img_costas"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/icone_costas"
+            android:layout_marginRight="100dp"
+            />
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="60dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="Treino de Costas"
+                android:textSize="13sp"/>
+
+            <Button
+                android:id="@+id/btn_treino_costas"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="Abrir"
+                android:textSize="10sp"
+                android:padding="0dp"
+                android:backgroundTint="@color/cor_azul"
+                app:cornerRadius="3dp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <!-- Seção Treino de Pernas-->
+    <RelativeLayout
+        android:layout_width="175dp"
+        android:layout_height="107dp"
+        android:background="@drawable/border"
+        android:orientation="horizontal"
+        android:layout_marginTop="460dp"
+        android:layout_marginRight="185dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/img_perna"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icone_perna"
+            android:layout_marginRight="100dp"
+            />
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="60dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="Treino de Pernas"
+                android:textSize="13sp"/>
+
+            <Button
+                android:id="@+id/btn_treino_pernas"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="Abrir"
+                android:textSize="10sp"
+                android:padding="0dp"
+                android:backgroundTint="@color/cor_azul"
+                app:cornerRadius="3dp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <!-- Seção Treino Personalizado-->
+    <RelativeLayout
+        android:layout_width="175dp"
+        android:layout_height="107dp"
+        android:background="@drawable/border"
+        android:orientation="horizontal"
+        android:layout_marginTop="460dp"
+        android:layout_marginLeft="185dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/icone_editar"
+            android:layout_marginRight="100dp"
+            />
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="50dp">
+
+            <Button
+                android:id="@+id/btn_treino_personalizado"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="Personalizar"
+                android:textSize="11sp"
+                android:padding="0dp"
+                android:backgroundTint="@color/cor_azul"
+                app:cornerRadius="3dp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <!-- Divisão Seção-->
+    <View
+        android:layout_width="360dp"
+        android:layout_height="3dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="580dp" />
+
     <!--Bottom Menu-->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         app:labelVisibilityMode="labeled"
@@ -192,4 +416,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1"
         />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

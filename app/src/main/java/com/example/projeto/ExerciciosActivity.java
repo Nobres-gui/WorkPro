@@ -31,7 +31,7 @@ public class ExerciciosActivity extends AppCompatActivity {
                 overridePendingTransition(0, 0);
                 return true;
             }
-            else if (id == R.id.navigation_exercicios) {
+            else if (id == R.id.navigation_timer) {
                 startActivity(new Intent(getApplicationContext(), ExerciciosActivity.class));
                 overridePendingTransition(0, 0);
                 return true;
@@ -41,7 +41,7 @@ public class ExerciciosActivity extends AppCompatActivity {
                 overridePendingTransition(0, 0);
                 return true;
             }
-            else if (id == R.id.navigation_timer) {
+            else if (id == R.id.navigation_exercicios) {
                 return true; // já está aqui
             }
             else if (id == R.id.navigation_perfil) {

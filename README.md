@@ -1,7 +1,7 @@
-# 🏋️‍♂️ WorkPro — Aplicativo de Treinos e Organização Fitness
+# 🏋️‍♂️ MusclePro — Aplicativo de Treinos e Organização Fitness
 
 ## 📱 Sobre o Projeto
-O **WorkPro** é um aplicativo Android desenvolvido em **Java** com interface em **XML**, voltado para auxiliar usuários na **criação, organização e disseminação de informações sobre treinos de academia**.  
+O **MusclePro** é um aplicativo Android desenvolvido em **Java** com interface em **XML**, voltado para auxiliar usuários na **criação, organização e disseminação de informações sobre treinos de academia**.  
 A proposta do app é oferecer uma plataforma prática e acessível para que qualquer pessoa possa **gerenciar seus treinos**, **acompanhar evolução física** e **compartilhar rotinas e dicas** com outros usuários.
 
 ---
@@ -14,7 +14,7 @@ O app busca atender desde iniciantes até praticantes avançados, oferecendo uma
 ---
 
 ## 🧩 Escopo do Projeto
-O escopo inicial do **WorkPro** inclui:
+O escopo inicial do **MusclePro** inclui:
 
 - 📋 **Criação e personalização de treinos** (com séries, repetições, pesos e observações);
 - 🗓️ **Organização semanal/mensal de treinos**;

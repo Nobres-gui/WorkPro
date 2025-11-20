@@ -37,12 +37,12 @@ public class TreinoActivity extends AppCompatActivity {
                 overridePendingTransition(0, 0);
                 return true;
             }
-            else if (id == R.id.navigation_treino) {
-                startActivity(new Intent(getApplicationContext(), TreinoActivity.class));
+            else if (id == R.id.navigation_timer) {
+                startActivity(new Intent(getApplicationContext(), TimerActivity.class));
                 overridePendingTransition(0, 0);
                 return true;
             }
-            else if (id == R.id.navigation_timer) {
+            else if (id == R.id.navigation_treino) {
                 return true; // já está aqui
             }
             else if (id == R.id.navigation_perfil) {
