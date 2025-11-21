@@ -243,7 +243,7 @@
                 android:textSize="10sp"
                 android:padding="0dp"
                 android:backgroundTint="@color/cor_azul"
-                app:cornerRadius="3dp" />
+                app:cornerRadius="4dp" />
 
         </LinearLayout>
 

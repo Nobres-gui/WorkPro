@@ -3,6 +3,7 @@ package com.example.projeto;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.ImageView;
 
@@ -20,6 +21,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /* Valida de é a primera execução do aplicativo, se sim vai para a página de permissões*/
+        SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
+        boolean firstRun = prefs.getBoolean("firstRun", true);
+
+        if (firstRun) {
+            // Marca como já executado
+            prefs.edit().putBoolean("firstRun", false).apply();
+
+            // Abre tela de permissões
+            Intent intent = new Intent(MainActivity.this, PermissoesActivity.class);
+            startActivity(intent);
+            finish(); // impede voltar para cá
+            return;
+        }
+
+        /*Muda a imagem dependendo do modo claro ou escuro*/
         ImageView img_peito = findViewById(R.id.img_peito);
         img_peito.setImageResource(R.drawable.icone_peito);
 
