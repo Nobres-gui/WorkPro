@@ -5,19 +5,25 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.LinearLayout;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class TreinoActivity extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
+    LinearLayout btn_treinoTeste;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_treino);
 
-
+        btn_treinoTeste = findViewById(R.id.btn_treinoTeste);
+        btn_treinoTeste.setOnClickListener(v -> {
+            Intent intent = new Intent(this, TreinoAddExerciciosActivity.class);
+            startActivity(intent);
+        });
 
         /* Funcionamento do Bottom Menu*/
         bottomNavigationView = findViewById(R.id.bottom_navigation);

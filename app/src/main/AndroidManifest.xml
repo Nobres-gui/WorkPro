@@ -17,6 +17,9 @@
         android:theme="@style/Theme.Projeto"
         tools:targetApi="31">
         <activity
+            android:name=".TreinoAddExerciciosActivity"
+            android:exported="false" />
+        <activity
             android:name=".CadastroUserActivity"
             android:exported="false" />
         <activity

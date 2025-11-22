@@ -19,9 +19,10 @@
         android:layout_marginRight="250dp"/>
 
     <LinearLayout
+        android:id="@+id/btn_treinoTeste"
         android:layout_width="340dp"
         android:layout_height="100dp"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,53 +31,55 @@
         android:background="@drawable/borda_arredondada_custom"
         app:cornerRadius="15dp">
 
-        <TextView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Novo Treinamento"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:textColor="@color/cor_cinza_escuro"
-            />
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Novo Treinamento"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/cor_cinza_escuro"
+                />
 
-        <TextView
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X exercícios"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/cor_cinza_escuro"
+                />
+        </LinearLayout>
+        <Space
+            android:layout_width="40dp"
+            android:layout_height="0dp" />
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="X exercícios"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:textColor="@color/cor_cinza_escuro"
-            />
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/btn_play"
+                android:backgroundTint="#00000000"
+               />
 
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/cor_azul"
+                android:text="Iniciar"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
     </LinearLayout>
 
-    <ImageButton
-        android:id="@+id/btn_iniciar_treinoID"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/btn_play"
-        android:backgroundTint="#00000000"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="135dp"
-        android:layout_marginLeft="250dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/cor_azul"
-        android:text="Iniciar"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="195dp"
-        android:layout_marginLeft="250dp"
-        />
 
     <Button
         android:id="@+id/btn_novoTreino"
