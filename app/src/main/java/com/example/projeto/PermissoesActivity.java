@@ -23,7 +23,7 @@ import java.util.List;
 public class PermissoesActivity extends AppCompatActivity {
 
     private static final int ALL_PERMISSIONS_CODE = 102;
-    private Button btn_permissoes;
+    protected Button btn_permissoes;
 
     /*Executado quando o aplicativo é pela primeira vez iniciado para pegar as permissões*/
     SharedPreferences sPreferences = null;
@@ -31,7 +31,7 @@ public class PermissoesActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle cicle) {
         super.onCreate(cicle);
-        setContentView(R.layout.activity_permissoes); // Coloque seu Layout aqui!
+        setContentView(R.layout.activity_permissoes);
 
         btn_permissoes = findViewById(R.id.btn_permissoes);
 
@@ -40,19 +40,20 @@ public class PermissoesActivity extends AppCompatActivity {
         btn_permissoes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                handleAllPermissionsGranted();
                 // Quando o botão é clicado, verificamos as permissões.
                 requestAppPermissions();
+
             }
         });
     }
 
         private void requestAppPermissions () {
+
             // Lista de permissões que precisamos solicitar
             String[] permissionsToRequest = {
                     Manifest.permission.ACCESS_FINE_LOCATION,
                     Manifest.permission.ACCESS_COARSE_LOCATION,
-                    // Adiciona a permissão de notificação se for Android 13+
-                    // Caso contrário, ela será ignorada ou já concedida automaticamente
             };
 
             // Vamos verificar quais permissões ainda não foram concedidas
@@ -76,10 +77,8 @@ public class PermissoesActivity extends AppCompatActivity {
                 ActivityCompat.requestPermissions(this,
                         listPermissionsNeeded.toArray(new String[listPermissionsNeeded.size()]),
                         ALL_PERMISSIONS_CODE);
-            } else {
-                // Todas as permissões já foram concedidas
-                handleAllPermissionsGranted();
             }
+
         }
 
     // Lida com o resultado da solicitação de permissão do sistema
@@ -89,11 +88,11 @@ public class PermissoesActivity extends AppCompatActivity {
 
         if (requestCode == ALL_PERMISSIONS_CODE) {
             // Verifica se TODAS as permissões necessárias foram concedidas
-            boolean allGranted = true;
+            boolean todasPermissaoConcedidas = true;
             for (int result : grantResults) {
                 if (result != PackageManager.PERMISSION_GRANTED) {
-                    allGranted = false;
-                    break; // Sai do loop assim que encontrar uma negada
+                    todasPermissaoConcedidas = false;
+                    break;
                 }
             }
         }
@@ -111,9 +110,9 @@ public class PermissoesActivity extends AppCompatActivity {
 
         if (sPreferences.getBoolean("firstRun", true)) {
             sPreferences.edit().putBoolean("firstRun", false).apply();
-            Toast.makeText(getApplicationContext(), "WorkPro", Toast.LENGTH_LONG).show();
-        } else {
             Toast.makeText(getApplicationContext(), "WorkPro...", Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(getApplicationContext(), "WorkPro", Toast.LENGTH_LONG).show();
         }
     }
 }

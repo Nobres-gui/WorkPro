@@ -6,18 +6,31 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
-    <EditText
-        android:id="@+id/text_login"
-        android:layout_width="300dp"
-        android:layout_height="60dp"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login ou sing up"
+        android:textColor="@color/cor_azul"
+        android:textSize="20sp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="65dp"
+        android:layout_marginTop="30dp"
+        />
+    <EditText
+        android:id="@+id/text_login"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:background="@drawable/edit_text_custom"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"
+        android:hint="Usuário ou email"
         />
     <Button
         android:id="@+id/btn_login"
-        android:layout_width="350dp"
+        android:layout_width="320dp"
         android:layout_height="60dp"
         android:text="Continue"
         android:textSize="20sp"
@@ -27,6 +40,111 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="170dp"
         />
+
+    <!--Divisoria "OU"-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="240dp"
+        android:gravity="center">
+        <View
+            android:layout_width="150dp"
+            android:layout_height="3dp"
+            android:background="?android:attr/listDivider"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ou"
+            android:layout_margin="4dp"
+            android:textColor="@color/cor_cinza_claro"/>
+        <View
+            android:layout_width="150dp"
+            android:layout_height="3dp"
+            android:background="?android:attr/listDivider"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="270dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_login_google"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:text="Continue com Google"
+            android:textSize="18sp"
+            android:background="@drawable/btn_border"
+            android:textColor="@color/cor_preta"
+            app:cornerRadius="10dp"
+            app:backgroundTint="@color/cor_cinza_claro"
+            />
+        <Button
+            android:id="@+id/btn_login_apple"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:text="Continue com Apple"
+            android:textSize="18sp"
+            android:background="@drawable/btn_border"
+            android:textColor="@color/cor_preta"
+            app:cornerRadius="10dp"
+            android:layout_marginTop="7dp"
+            app:backgroundTint="@color/cor_cinza_claro"
+            />
+        <Button
+            android:id="@+id/btn_login_facebook"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:text="Continue com Facebook"
+            android:textSize="18sp"
+            android:background="@drawable/btn_border"
+            app:cornerRadius="10dp"
+            android:textColor="@color/cor_preta"
+            android:layout_marginTop="7dp"
+            app:backgroundTint="@color/cor_cinza_claro"
+            />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/google"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="291dp"
+        app:layout_constraintHorizontal_bias="0.22"/>
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/apple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="356dp"
+        app:layout_constraintHorizontal_bias="0.245"/>
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/facebook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="424dp"
+        app:layout_constraintHorizontal_bias="0.19"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

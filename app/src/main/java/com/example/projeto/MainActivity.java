@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -45,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
 
         ImageView img_perna = findViewById(R.id.img_perna);
         img_perna.setImageResource(R.drawable.icone_perna);
-
 
         /* Funcionamento do Bottom Menu*/
         bottomNavigationView = findViewById(R.id.bottom_navigation);
