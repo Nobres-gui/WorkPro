@@ -37,16 +37,6 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        /*Muda a imagem dependendo do modo claro ou escuro*/
-        ImageView img_peito = findViewById(R.id.img_peito);
-        img_peito.setImageResource(R.drawable.icone_peito);
-
-        ImageView img_costas = findViewById(R.id.img_costas);
-        img_costas.setImageResource(R.drawable.icone_costas);
-
-        ImageView img_perna = findViewById(R.id.img_perna);
-        img_perna.setImageResource(R.drawable.icone_perna);
-
         /* Funcionamento do Bottom Menu*/
         bottomNavigationView = findViewById(R.id.bottom_navigation);
 

@@ -17,6 +17,15 @@
         android:theme="@style/Theme.Projeto"
         tools:targetApi="31">
         <activity
+            android:name=".CadastroUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SenhaCadastrarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SenhaLoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
