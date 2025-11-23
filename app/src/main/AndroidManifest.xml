@@ -17,6 +17,12 @@
         android:theme="@style/Theme.Projeto"
         tools:targetApi="31">
         <activity
+            android:name=".TreinoAddExerciciosSelecaoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditarTreinoActivity"
+            android:exported="false" />
+        <activity
             android:name=".TreinoAddExerciciosActivity"
             android:exported="false" />
         <activity
