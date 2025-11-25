@@ -2,9 +2,9 @@ package com.example.projeto;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.LinearLayout;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -20,8 +20,9 @@ public class TreinoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_treino);
 
         btn_treinoTeste = findViewById(R.id.btn_treinoTeste);
-        btn_treinoTeste.setOnClickListener(v -> {
-            Intent intent = new Intent(this, TreinoAddExerciciosActivity.class);
+        btn_treinoTeste.setOnClickListener(view -> {
+            Intent intent;
+            intent = new Intent(TreinoActivity.this, TreinoAddExerciciosActivity.class);
             startActivity(intent);
         });
 
