@@ -6,6 +6,72 @@
     android:layout_height="match_parent"
     tools:context=".PerfilActivity">
 
+
+    <View
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:background="@drawable/circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="-220dp"
+        />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="150dp"/>
+
+    <TextView
+        android:id="@+id/perfil_nome_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome Usuário"
+        android:textSize="25dp"
+        android:textColor="@color/cor_branca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        />
+
+
+    <View
+        android:layout_width="360dp"
+        android:layout_height="3dp"
+        android:backgroundTint="?android:attr/listDivider"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="410dp"
+        android:background="@color/cor_azul"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="380dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/config"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Configurações"
+            android:textSize="18sp"
+            android:textColor="@color/cor_azul"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
     <!--Bottom Menu-->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         app:labelVisibilityMode="labeled"
