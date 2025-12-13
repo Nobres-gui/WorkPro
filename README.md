@@ -43,7 +43,7 @@ _(futuramente: integração com Firebase para login e armazenamento na nuvem)_
 ## 📅 Status do Projeto
 
 🚧 **Em desenvolvimento**  
-Atualmente na fase inicial de **ciração do front-end e modelagem de dados**.
+Atualmente na fase final de **criação das ultimas funções do projeto**.
 
 ---
 
