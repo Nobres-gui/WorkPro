@@ -26,7 +26,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="100dp"
-        android:hint="Usuário ou email"
+        android:hint="Insira se email"
         />
     <Button
         android:id="@+id/btn_login"
@@ -42,6 +42,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="170dp"
         />
+    <TextView
+        android:id="@+id/btn_login_crieConta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Não tem conta? Crie Já"
+        android:textColor="@color/cor_azul"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="235dp"/>
+
 
     <!--Divisoria "OU"-->
     <LinearLayout
@@ -51,7 +62,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="240dp"
+        android:layout_marginTop="260dp"
         android:gravity="center">
         <View
             android:layout_width="150dp"
@@ -78,7 +89,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="270dp"
+        android:layout_marginTop="290dp"
         android:gravity="center">
 
         <Button
@@ -127,7 +138,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="291dp"
+        android:layout_marginTop="310dp"
         app:layout_constraintHorizontal_bias="0.22"/>
     <ImageView
         android:layout_width="20dp"
@@ -136,7 +147,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="356dp"
+        android:layout_marginTop="376dp"
         app:layout_constraintHorizontal_bias="0.245"/>
     <ImageView
         android:layout_width="20dp"
@@ -145,6 +156,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="424dp"
+        android:layout_marginTop="444dp"
         app:layout_constraintHorizontal_bias="0.19"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

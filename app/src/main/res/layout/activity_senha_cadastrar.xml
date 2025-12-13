@@ -32,7 +32,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Crie sua senha"
-        android:textColor="@color/cor_preta"
         android:textSize="20sp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,6 +48,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="160dp"
+        android:inputType="textPassword"
         android:hint="Senha"
         />
 
@@ -61,7 +61,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="230dp"
-        android:hint="Senha"
+        android:inputType="textPassword"
+        android:hint="Confirmar senha"
         />
     <Button
         android:id="@+id/btn_cadastrar_senha"

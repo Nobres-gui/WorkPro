@@ -35,11 +35,12 @@
                 android:text="Frequência Semanal" />
 
             <TextView
-                android:layout_width="20dp"
+                android:id="@+id/qtd_freq_semana_valor"
+                android:layout_width="wrap_content"
                 android:layout_height="20dp"
                 android:textStyle="bold"
                 android:layout_marginRight="10dp"
-                android:text="?/?" />
+                />
         </LinearLayout>
 
         <ProgressBar
@@ -149,7 +150,7 @@
                 android:textColor="@color/cor_cinza_claro"
                 android:textStyle="bold"
                 android:layout_marginLeft="2dp"
-                android:text="(Treinos)" />
+                android:text="(Dias)" />
 
         </LinearLayout>
 
@@ -172,7 +173,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
-                android:text="Treinos" />
+                android:textSize="15dp"
+                android:text="Treino semanal"
+                />
         </LinearLayout>
 
     </RelativeLayout>

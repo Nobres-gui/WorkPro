@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "nome": "Supino Reto",
+        "grupo": "Peito",
+        "descricao": "Exercício clássico para o peitoral utilizando barra.",
+        "gif": "https://www.mundoboaforma.com.br/wp-content/uploads/2020/12/supino-reto-com-halteres.gif"
+    },
+    {
+        "id": 2,
+        "nome": "Agachamento Livre",
+        "grupo": "Pernas",
+        "descricao": "Agachamento completo para quadríceps e glúteos.",
+        "gif": "https://www.mundoboaforma.com.br/wp-content/uploads/2020/11/agachamento-livre-1.gif"
+    },
+    {
+        "id": 3,
+        "nome": "Remada Curvada",
+        "grupo": "Costas",
+        "descricao": "Trabalha dorsais e lombar com barra.",
+        "gif": "https://www.hipertrofia.org/blog/wp-content/uploads/2024/06/barbell-pendlay-row.gif"
+    },
+    {
+        "id": 4,
+        "nome": "Desenvolvimento",
+        "grupo": "Ombros",
+        "descricao": "Exercício para deltoides com barra.",
+        "gif": "https://www.mundoboaforma.com.br/wp-content/uploads/2020/12/desenvolvimento-para-ombros-com-halteres.gif"
+    },
+    {
+        "id": 5,
+        "nome": "Rosca Direta",
+        "grupo": "Bíceps",
+        "descricao": "Movimento para bíceps com barra.",
+        "gif": "https://www.hipertrofia.org/blog/wp-content/uploads/2023/09/dumbbell-biceps-curl.gif"
+    },
+    {
+        "id": 6,
+        "nome": "Tríceps Testa",
+        "grupo": "Tríceps",
+        "descricao": "Exercício isolado com barra W.",
+        "gif": "https://www.mundoboaforma.com.br/wp-content/uploads/2021/03/rosca-triceps-testa-deitado-no-banco-com-barra-tradicional.gif"
+    },
+    {
+        "id": 7,
+        "nome": "Elevação Lateral",
+        "grupo": "Ombros",
+        "descricao": "Isolamento dos deltoides laterais com halteres.",
+        "gif": "https://media.tenor.com/cy46UbnfUrkAAAAM/eleva%C3%A7%C3%A3o-lateral-hateres.gif"
+    },
+    {
+        "id": 8,
+        "nome": "Stiff",
+        "grupo": "Posterior de Coxa",
+        "descricao": "Alongamento e força para posteriores.",
+        "gif": "https://i.pinimg.com/originals/82/4d/fd/824dfd405284597cd20e8a55233e2d77.gif"
+    },
+    {
+        "id": 9,
+        "nome": "Puxada Aberta",
+        "grupo": "Costas",
+        "descricao": "Trabalha dorsais e trapézio.",
+        "gif": "https://www.mundoboaforma.com.br/wp-content/uploads/2020/12/costas-puxada-aberta-com-barra-no-pulley.gif"
+    },
+    {
+        "id": 10,
+        "nome": "Panturrilha em Pé",
+        "grupo": "Panturrilhas",
+        "descricao": "Movimento para gastrocnêmio.",
+        "gif": "https://www.hipertrofia.org/blog/wp-content/uploads/2023/03/lever-standing-calf-raise.gif"
+    }
+]

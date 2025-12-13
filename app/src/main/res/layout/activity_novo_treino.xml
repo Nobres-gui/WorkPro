@@ -32,16 +32,6 @@
             />
     </LinearLayout>
 
-    <ImageView
-        android:src="@drawable/excluir"
-        android:id="@+id/btnDeletarTreino"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="350dp"
-        android:layout_marginTop="10dp"/>
-
     <!--Editar Titulo Treino-->
     <ImageView
         android:layout_width="30dp"
