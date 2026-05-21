@@ -36,14 +36,12 @@ O escopo inicial do **WorkPro** inclui:
 - **Banco de Dados Local:** SQLite
 - **Controle de Versão:** Git & GitHub
 
-_(futuramente: integração com Firebase para login e armazenamento na nuvem)_
-
 ---
 
 ## 📅 Status do Projeto
 
-🚧 **Em desenvolvimento**  
-Atualmente na fase final de **criação das ultimas funções do projeto**.
+🚧 **Projeto Finalizado**  
+Todos os requisitos foram cumpridos.
 
 ---
 
@@ -57,6 +55,9 @@ Você pode utilizá-lo, modificá-lo e distribuí-lo livremente, desde que mante
 ## ✉️ Contato
 
 Desenvolvido por **Guilherme Nobres de Souza**  
-📧 guilhermenobres27@gmail.com
+📧 guilhermenobres27@gmail.com <br>
 
+--- 
+Baixe o aplicativo do Projeto WorkPro em seu celular <br>
+<a style="text-decoration:none;" href="https://drive.google.com/file/d/1QX7zmyCi703LTHegQKCsTp4CMxJEg4WT/view?usp=sharing"> Baixar agora</a>
 ---
